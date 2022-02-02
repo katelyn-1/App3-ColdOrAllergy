@@ -46,7 +46,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
         }
-
+	
+	function results(){
+	var allergy_percentage = (allergy_count / 6) * 100;
+	var cold_percentage = (cold_count / 6) * 100;
+	var resultText = document.getElementById("results");	
+	}
+	
   </script>
 
 
@@ -166,7 +172,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 	<p>Thank you for completing the survey.</p>
-	<a class="w3-btn w3-purple"> Click here for results!</a>
+	<a onclick="results();" class="w3-btn w3-purple"> Click here for results!</a>
+		<p id="results"> </p>
 	
 	</div>
 </div>
