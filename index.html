@@ -159,6 +159,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-red"> No</a>
 	</div>
 </div>	
+	
+<div class="page" id="seven">
+	<div class="Results!</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+	<p>Thank you for completing the survey. Here are your results.</p>
+	<p id="results"></p>
+	var resultText = document.getElementById("results");
+	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 						 
+	</div>
+</div>	
+	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
